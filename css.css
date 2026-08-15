@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Nav styles*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+    background-color: rgb(231, 230, 230);
+    align-items: center;
+}
+
+nav p {
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.this-page {
+    font-weight: 700;
+    border-bottom: 3px solid black;
+}
+
+nav button {
+    background-color: black;
+    color: white;
+    padding: 0.25rem;
+    border-radius: 5px;
+}
+
+/* Body Styles */
+
+.title {
+    padding: 2rem;
+}
+
+.title h1 {
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.title h3 {
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(51, 51, 51);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    gap: 10px;
+    padding: 2rem;
+}
+
+.cards div {
+    border-radius: 8px;
+}
+
+.card-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    border: 1px solid black;
+}
+
+.card-2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    border: 1px solid black;
+}
+
+.card-3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    border: 1px solid black;
+}
+
+.card-4 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+    border: 1px solid black;
+}
+
+.enter-thoughts {
+    grid-column: 1 / 4;
+    grid-row: 5 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed black;
+}
+
+.enter-thoughts div {
+    border: none;
+    text-align: center;
+}
+
+.enter-thoughts i {
+    font-size: 1.5rem;
+    background-color: lightgray;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.enter-thoughts p {
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.enter-thoughts a {
+    color: black;
+}
