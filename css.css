@@ -47,6 +47,12 @@ nav button {
     color: white;
     padding: 0.25rem;
     border-radius: 5px;
+    margin-right: 0.5rem;
+}
+
+nav i {
+    font-size: 1.5rem;
+    
 }
 
 /* Body Styles */
@@ -140,4 +146,58 @@ nav button {
 
 .enter-thoughts a {
     color: black;
+}
+
+/*New Entry*/
+.new-entry {
+    margin-top: 2rem;
+    text-align: center; /*Centers input and text area*/
+}
+
+input {
+    width: 80%;
+    padding: 2rem;
+    font-weight: 800;
+    font-size: 2rem;
+    background-color: #ededeb;
+    border: none;
+    border-left: 2px solid black;
+}
+
+
+textarea {
+    width: 80%;
+    padding: 2rem;
+    height: 70vh;
+    background-color: #ededeb;
+    border: none;
+}
+
+.bottom-new-entry{
+    display: flex;
+    width: 80%;
+    text-align: center;
+    justify-content: space-between;
+    justify-self: center;
+    padding: 2rem;
+}
+
+.bottom-new-entry div {
+    display: flex; 
+    align-items: center;
+}
+
+.add-new-entry p{
+    margin-right: 2rem;
+}
+
+.discard-save p{
+    margin-right: 2rem;
+}
+
+.bottom-new-entry button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
