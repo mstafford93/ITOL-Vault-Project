@@ -3,36 +3,48 @@
 const save = document.getElementById("save");
 
 class ObjectEntry {
-    constructor (title, thought){
-    this.title = title,
-    this.thought = thought
+    constructor(title, thought, date) {
+        this.title = title,
+            this.thought = thought,
+            this.date = date
     }
 };
 let newEntries = [];
 
-function saveThought(){
+function saveThought() {
 
 
-const title = document.getElementById("newThoughtTitle").value;
-const thought = document.getElementById("newThought").value;
+    const title = document.getElementById("newThoughtTitle").value;
+    const thought = document.getElementById("newThought").value;
 
-if (title == "" ||  thought == ""){
-    alert("Please enter thought and title");
-} else {
-//Create object
-const newEntry = new ObjectEntry(title, thought);
+    if (title == "" || thought == "") {
+        alert("Please enter thought and title");
+    } else {
+        function formatDate(date) {
+            const year = date.getFullYear();
+            const month = date.getMonth() + 1;
+            const day = date.getDate();
 
-//unshift to array
-newEntries.unshift(newEntry);
+            return `${day} / ${month} / ${year}`;
 
-//console.log(`${title}: ${thought}`);
-localStorage.setItem('entries', JSON.stringify(newEntries));
+        };
 
-//Resets inputs
-document.getElementById("newThoughtTitle").value = "";
-document.getElementById("newThought").value = "";
+        const today = new Date();
+        const formattedDate = formatDate(today);
+        //Create object
+        const newEntry = new ObjectEntry(title, thought, formattedDate);
 
-}
+        //unshift to array
+        newEntries.unshift(newEntry);
+
+        //console.log(`${title}: ${thought}`);
+        localStorage.setItem('entries', JSON.stringify(newEntries));
+
+        //Resets inputs
+        document.getElementById("newThoughtTitle").value = "";
+        document.getElementById("newThought").value = "";
+
+    }
 
 };
 
