@@ -180,6 +180,7 @@ textarea {
     justify-content: space-between;
     justify-self: center;
     padding: 2rem;
+    color: gray;
 }
 
 .bottom-new-entry div {
@@ -200,4 +201,22 @@ textarea {
     color: white;
     padding: 0.5rem;
     border-radius: 5px;
+}
+
+/* Vault Sytles */
+
+.myEntries {
+    width: 85%;
+    margin-top: 2rem;
+    justify-self: center;
+    border: 1px solid black;
+    height: 30vh;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: whitesmoke;
+}
+
+.myEntries h1 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
