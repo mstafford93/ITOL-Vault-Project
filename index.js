@@ -1,11 +1,12 @@
 //For index.html
 
 const myEntries = JSON.parse(localStorage.getItem('entries'));
-myEntries.splice(3);
+myEntries.splice(4);
 
-
-
-document.getElementById("card-0").innerHTML =
+myEntries.forEach((value, index) => {
+    document.getElementById(`card-${index}`).innerHTML =
     `<h6>Date</h6>
-    <h1>${myEntries[0].title}</h1>
-    <p>${myEntries[0].thought}</p>`;
+    <h1>${myEntries[index].title}</h1>
+    <p>${myEntries[index].thought}</p>`;
+});
+
