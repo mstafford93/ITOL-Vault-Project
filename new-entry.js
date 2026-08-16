@@ -1,3 +1,5 @@
+//For new-entry.html
+
 const save = document.getElementById("save");
 
 class ObjectEntry {
@@ -29,6 +31,7 @@ localStorage.setItem('entries', JSON.stringify(newEntries));
 //Resets inputs
 document.getElementById("newThoughtTitle").value = "";
 document.getElementById("newThought").value = "";
+
 }
 
 };
