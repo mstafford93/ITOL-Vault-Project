@@ -226,6 +226,10 @@ textarea {
 
 /* Vault Sytles */
 
+#vaultEntries{
+    min-height: 70vh;
+}
+
 .myEntries {
     width: 85%;
     margin-top: 2rem;
