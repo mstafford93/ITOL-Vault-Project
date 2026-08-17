@@ -233,11 +233,18 @@ textarea {
     padding: 1rem;
     border-radius: 8px;
     background-color: whitesmoke;
+    position: relative;
 }
 
 .myEntries h1 {
     margin-bottom: 1rem;
     margin-top: 1rem;
+}
+
+.removeBin {
+    position: absolute;
+    bottom: 0.25rem;
+    right: 0.25rem;
 }
 
 /*Footer Styles*/
