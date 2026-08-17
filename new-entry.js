@@ -11,7 +11,7 @@ class ObjectEntry {
 };
 
 // Load saved array or start with an empty array
-let newEntries = JSON.parse(localStorage.getItem('newEntries')) || [];
+let newEntries = JSON.parse(localStorage.getItem('entries')) || [];
 
 function saveThought() {
 
