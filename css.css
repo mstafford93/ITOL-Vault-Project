@@ -184,6 +184,7 @@ input {
 textarea {
     width: 80%;
     padding: 2rem;
+    font-size: 1.25rem;
     height: 70vh;
     background-color: #ededeb;
     border: none;
@@ -290,4 +291,14 @@ footer a:hover{
     background-color: white;
     color: black;
     border: 1px solid black; 
+}
+
+/*:focus on input and textarea*/
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
 }

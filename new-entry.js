@@ -9,7 +9,9 @@ class ObjectEntry {
             this.date = date
     }
 };
-let newEntries = [];
+
+// Load saved array or start with an empty array
+let newEntries = JSON.parse(localStorage.getItem('newEntries')) || [];
 
 function saveThought() {
 
@@ -49,3 +51,15 @@ function saveThought() {
 };
 
 save.addEventListener("click", saveThought); //Remove the parentheses stops being accidently called before
+
+
+// Discard thought
+const discard = document.getElementById("discard");
+
+function discardThought(){
+    //Resets inputs
+        document.getElementById("newThoughtTitle").value = "";
+        document.getElementById("newThought").value = "";
+}
+
+discard.addEventListener("click", discardThought); //Remove the parentheses stops being accidently called before
