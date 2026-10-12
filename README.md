@@ -15,10 +15,15 @@ Configeration
   - No config needed
 
 Contributing Guidelines
-  - Project is an individual effort to showcase my skills so far
+  - Project is an individual effort to showcase my skills so far.
+  - Knowledge of Flexbox and Grid. Avoiding absolute positioning as per the request of the brief.
 
 Credits
   - Matthew Stafford
 
 Licencing
   - No licences
+
+
+More Detail about my specific challenges with this project - 
+    <a href="https://medium.com/@mgstafford/learning-to-code-tailwind-challenge-architect-portfolio-tailwind-2f7f586a6af6">Learning to Code — Tailwind Challenge — Architect Portfolio Tailwind.</a>
